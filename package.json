@@ -1,0 +1,27 @@
+{
+  "name": "refractile-tests",
+  "version": "0.0.1",
+  "description": "\"Tests for refractile npm package\" ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BufoOS/refractile-tests.git"
+  },
+  "keywords": [
+    "refractile",
+    "tests"
+  ],
+  "author": "BufoOS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BufoOS/refractile-tests/issues"
+  },
+  "homepage": "https://github.com/BufoOS/refractile-tests#readme",
+  "dependencies": {
+    "jest": "^29.6.1",
+    "refractile": "^0.0.1"
+  }
+}
