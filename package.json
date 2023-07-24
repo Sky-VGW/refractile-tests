@@ -22,6 +22,6 @@
   "homepage": "https://github.com/BufoOS/refractile-tests#readme",
   "dependencies": {
     "jest": "^29.6.1",
-    "refractile": "^0.0.1"
+    "refractile": "^0.0.2"
   }
 }
