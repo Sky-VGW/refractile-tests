@@ -2,10 +2,10 @@
 
 using namespace emscripten; 
 
-void setValue(val input, int to) { 
-    input.Set("value", to);
+int test1(int x, int y) { 
+    return x + y;
 }
 
-EMSCRIPTEN_BINDINGS(my_module) { 
-    function("setValue", &setValue);
+EMSCRIPTEN_BINDINGS(test1) { 
+    function("test1", test1);
 }

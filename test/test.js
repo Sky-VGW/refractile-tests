@@ -1,8 +1,7 @@
-const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-//test config 1
+// test config 1
 describe('#empty module', () => {
   let refract;
     
@@ -83,10 +82,10 @@ describe('#no bin on module', () => {
     let error;
 
     try {
-      refract("nonexistent_module", "nonexistent_func");
+      refract("test1", "test1");
     } catch (e) {
       error = e;
-      console.log(error);
+      console.log(e);
     }
 
     expect(error).not.toBe(null);
@@ -99,3 +98,37 @@ describe('#no bin on module', () => {
     }
   )
 });
+// test config 5
+// describe('#test1 module', () => {
+//   let refract;
+    
+//   beforeAll((done) => { 
+//     // Copy the test config to the root as the refractile.config.js
+//     execSync('bash -c \"cp ./configs/config5.js ./refractile.config.js\"');
+//     refract = require('refractile');
+//     done();
+//   }); 
+
+//   it('should compile to webAssembly and set the value to the test input', async () => { 
+//     let error; 
+
+//     try {       
+//       console.log('in try block')
+//       const resultFunc = await refract("test1", "test1");
+//       const result = await resultFunc(3, 4);
+//       // console.log(result);
+
+//     } catch (e) { 
+//       error = e
+//       console.log(error);
+//     }; 
+
+//   });
+//     // Remove the test config after tests are run
+//   afterAll(
+//     (done) => {
+//       execSync('bash -c \"rm ./refractile.config.js\"');
+//       done();           
+//     }
+//   )
+// });
